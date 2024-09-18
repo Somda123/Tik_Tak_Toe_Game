@@ -1,0 +1,125 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+}
+header{
+    left: 0;
+    width: 100%;
+    background-color: #2f4f4f;
+    padding-top: 40px;
+    box-shadow: 1px 2px 20px 2px rgb(6, 244, 244);
+
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 36px;
+    color: #333;
+    box-shadow: 1px 2px 20px 2px red;
+    display: inline;
+    border-radius: 3px;
+}
+h1:hover{
+    color: blue;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 300px;
+
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #1bf50b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 1px 2px 10px 2px rgb(0, 255, 229);
+
+}
+
+.cell:hover {
+    background-color: #f0f0f0;
+}
+
+.cell.X {
+    color: #ff6347;  
+}
+
+.cell.O {
+    color: #4682b4; 
+}
+
+.game-status {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #2f4f4f;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:hover{
+    color: red;
+}
+
+footer{
+    position: absolute;
+    text-align: center;
+    color: white;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2f4f4f;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    box-shadow: 1px 2px 20px 2px rgb(6, 244, 244);
+
+}
+
+@media (max-width: 600px) {
+    .cell {
+        width: 80px;
+        height: 80px;
+        font-size: 2em;
+    }
+
+    .board {
+        max-width: 240px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
